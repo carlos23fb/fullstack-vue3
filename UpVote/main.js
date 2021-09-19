@@ -11,5 +11,11 @@ const upvoteApp = {
             });
         },
     },
+    methods: {
+        upvote(articleID){
+            const article = this.submissions.find((article) => article.id === articleID);
+            article.votes++;
+        }
+    },
 };
 Vue.createApp(upvoteApp).mount('#app')
