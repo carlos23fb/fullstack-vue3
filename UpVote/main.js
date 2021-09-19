@@ -1,7 +1,7 @@
 const upvoteApp = {
     data(){
         return{
-            submissions: Seed.submission
+            submissions: Seed.submissions
         }
     }
 };
