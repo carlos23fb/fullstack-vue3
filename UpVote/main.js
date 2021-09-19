@@ -1,13 +1,13 @@
 const articleComponent = {
     template: `<div style="display: flex; width: 100%">
                 <figure class="media-left">
-                    <img v-bind:src="article.submissionImage" alt="" class="image is-64x64">
+                    <img :src="article.submissionImage" alt="" class="image is-64x64">
                 </figure>
                 <div class="media-content">
                     <div class="content">
                         <p>
                             <strong>
-                                <a v-bind:href="article.url" class="has-text-info">
+                                <a :href="article.url" class="has-text-info">
                                     {{ article.title }}
                                 </a>
                                 <span class="tag is-small">#{{ article.id }}</span>
@@ -17,7 +17,7 @@ const articleComponent = {
                             <br>
                             <small class="is-size-7">
                                 Submitted by:
-                                <img v-bind:src="article.avatar" alt="" class="image is-24x24">
+                                <img :src="article.avatar" alt="" class="image is-24x24">
                             </small>
                         </p>
                     </div>
